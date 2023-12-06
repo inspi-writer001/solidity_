@@ -1,0 +1,1775 @@
+{
+    "contractName": "NFTCount",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "checkNFTCount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "decreaseNFT",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "increaseNFT",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"checkNFTCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decreaseNFT\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"increaseNFT\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/mac/Documents/solidity_/main.sol\":\"NFTCount\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/mac/Documents/solidity_/main.sol\":{\"keccak256\":\"0xcb0945f46f32755fd17f9b8ca22764c99ca64684e94b87d4f5b5d1b4454da141\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ae7f45273dfd00ef0616c74701d7c5537fadd2385d1fedefa896bb082ec6260f\",\"dweb:/ipfs/QmcXPwhXXiXmhLGrsVGqctB9pce5mwvVxd6cYytxSoMQdH\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b50610158806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806360c50851146100465780638f635bf11461005b578063c11aa37914610065575b600080fd5b60005460405190815260200160405180910390f35b61006361006d565b005b610063610086565b600160008082825461007f91906100f6565b9091555050565b60008054116100ce5760405162461bcd60e51b815260206004820152601060248201526f04e46542062616c616e636520697320360841b604482015260640160405180910390fd5b600160008082825461007f919061010f565b634e487b7160e01b600052601160045260246000fd5b80820180821115610109576101096100e0565b92915050565b81810381811115610109576101096100e056fea26469706673582212207bcbfe41ab84d014a719467c86bf44610da56cbea0b756d581e78d12677e612e64736f6c63430008130033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c806360c50851146100465780638f635bf11461005b578063c11aa37914610065575b600080fd5b60005460405190815260200160405180910390f35b61006361006d565b005b610063610086565b600160008082825461007f91906100f6565b9091555050565b60008054116100ce5760405162461bcd60e51b815260206004820152601060248201526f04e46542062616c616e636520697320360841b604482015260640160405180910390fd5b600160008082825461007f919061010f565b634e487b7160e01b600052601160045260246000fd5b80820180821115610109576101096100e0565b92915050565b81810381811115610109576101096100e056fea26469706673582212207bcbfe41ab84d014a719467c86bf44610da56cbea0b756d581e78d12677e612e64736f6c63430008130033",
+    "sourceMap": "449:334:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "449:334:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;499:90;545:7;571:11;499:90;;160:25:1;;;148:2;133:18;499:90:0;;;;;;;595:63;;;:::i;:::-;;664:117;;;:::i;595:63::-;650:1;635:11;;:16;;;;;;;:::i;:::-;;;;-1:-1:-1;;595:63:0:o;664:117::-;726:1;712:11;;:15;704:44;;;;-1:-1:-1;;;704:44:0;;660:2:1;704:44:0;;;642:21:1;699:2;679:18;;;672:30;-1:-1:-1;;;718:18:1;;;711:46;774:18;;704:44:0;;;;;;;;773:1;758:11;;:16;;;;;;;:::i;196:127:1:-;257:10;252:3;248:20;245:1;238:31;288:4;285:1;278:15;312:4;309:1;302:15;328:125;393:9;;;414:10;;;411:36;;;427:18;;:::i;:::-;328:125;;;;:::o;803:128::-;870:9;;;891:11;;;888:37;;;905:18;;:::i",
+    "sourcePath": "/Users/mac/Documents/solidity_/main.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.19+commit.7dd6d404"
+    },
+    "ast": {
+        "absolutePath": "/Users/mac/Documents/solidity_/main.sol",
+        "exportedSymbols": {
+            "BusyDay": [
+                155
+            ],
+            "MyFirstContract": [
+                16
+            ],
+            "NFTCount": [
+                50
+            ]
+        },
+        "id": 156,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".13"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "31:24:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "MyFirstContract",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 16,
+                "linearizedBaseContracts": [
+                    16
+                ],
+                "name": "MyFirstContract",
+                "nameLocation": "66:15:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "bde2b573",
+                        "id": 3,
+                        "mutability": "mutable",
+                        "name": "hey",
+                        "nameLocation": "191:3:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 16,
+                        "src": "177:17:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "177:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "4d94994c",
+                        "id": 5,
+                        "mutability": "mutable",
+                        "name": "lucky_number",
+                        "nameLocation": "215:12:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 16,
+                        "src": "200:27:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 4,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "200:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 14,
+                            "nodeType": "Block",
+                            "src": "418:27:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 12,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 10,
+                                            "name": "hey",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "428:3:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 11,
+                                            "name": "_hey",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 7,
+                                            "src": "434:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "428:10:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 13,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "428:10:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "3cc7a658",
+                        "id": 15,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "updateHey",
+                        "nameLocation": "381:9:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 8,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 7,
+                                    "mutability": "mutable",
+                                    "name": "_hey",
+                                    "nameLocation": "405:4:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 15,
+                                    "src": "391:18:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 6,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "391:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "390:20:0"
+                        },
+                        "returnParameters": {
+                            "id": 9,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "418:0:0"
+                        },
+                        "scope": 16,
+                        "src": "372:73:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 156,
+                "src": "57:390:0",
+                "usedErrors": []
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "NFTCount",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 50,
+                "linearizedBaseContracts": [
+                    50
+                ],
+                "name": "NFTCount",
+                "nameLocation": "458:8:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 18,
+                        "mutability": "mutable",
+                        "name": "numberOfNFT",
+                        "nameLocation": "481:11:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 50,
+                        "src": "473:19:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 17,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "473:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 25,
+                            "nodeType": "Block",
+                            "src": "554:35:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 23,
+                                        "name": "numberOfNFT",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 18,
+                                        "src": "571:11:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 22,
+                                    "id": 24,
+                                    "nodeType": "Return",
+                                    "src": "564:18:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "60c50851",
+                        "id": 26,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "checkNFTCount",
+                        "nameLocation": "508:13:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 19,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "521:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 22,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 21,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 26,
+                                    "src": "545:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 20,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "545:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "544:9:0"
+                        },
+                        "scope": 50,
+                        "src": "499:90:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 33,
+                            "nodeType": "Block",
+                            "src": "625:33:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 31,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 29,
+                                            "name": "numberOfNFT",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 18,
+                                            "src": "635:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "hexValue": "31",
+                                            "id": 30,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "650:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "635:16:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 32,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "635:16:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "8f635bf1",
+                        "id": 34,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "increaseNFT",
+                        "nameLocation": "604:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 27,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "615:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 28,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "625:0:0"
+                        },
+                        "scope": 50,
+                        "src": "595:63:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 48,
+                            "nodeType": "Block",
+                            "src": "694:87:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "commonType": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                },
+                                                "id": 40,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "id": 38,
+                                                    "name": "numberOfNFT",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 18,
+                                                    "src": "712:11:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": ">",
+                                                "rightExpression": {
+                                                    "hexValue": "30",
+                                                    "id": 39,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "726:1:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                        "typeString": "int_const 0"
+                                                    },
+                                                    "value": "0"
+                                                },
+                                                "src": "712:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            {
+                                                "hexValue": "4e46542062616c616e63652069732030",
+                                                "id": 41,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "729:18:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_b3f89152d1b91218fce2656535765faae025e36357a008e7edc73995ea0a1320",
+                                                    "typeString": "literal_string \"NFT balance is 0\""
+                                                },
+                                                "value": "NFT balance is 0"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_b3f89152d1b91218fce2656535765faae025e36357a008e7edc73995ea0a1320",
+                                                    "typeString": "literal_string \"NFT balance is 0\""
+                                                }
+                                            ],
+                                            "id": 37,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                4294967278,
+                                                4294967278
+                                            ],
+                                            "referencedDeclaration": 4294967278,
+                                            "src": "704:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (bool,string memory) pure"
+                                            }
+                                        },
+                                        "id": 42,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "704:44:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 43,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "704:44:0"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 46,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 44,
+                                            "name": "numberOfNFT",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 18,
+                                            "src": "758:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "-=",
+                                        "rightHandSide": {
+                                            "hexValue": "31",
+                                            "id": 45,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "773:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "758:16:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 47,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "758:16:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "c11aa379",
+                        "id": 49,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "decreaseNFT",
+                        "nameLocation": "673:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "684:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 36,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "694:0:0"
+                        },
+                        "scope": 50,
+                        "src": "664:117:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 156,
+                "src": "449:334:0",
+                "usedErrors": []
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "BusyDay",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 155,
+                "linearizedBaseContracts": [
+                    155
+                ],
+                "name": "BusyDay",
+                "nameLocation": "794:7:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 52,
+                        "mutability": "mutable",
+                        "name": "days_of_week",
+                        "nameLocation": "814:12:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 155,
+                        "src": "808:18:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                        },
+                        "typeName": {
+                            "id": 51,
+                            "name": "uint8",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "808:5:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint8",
+                                "typeString": "uint8"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 54,
+                        "mutability": "mutable",
+                        "name": "months_of_year",
+                        "nameLocation": "838:14:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 155,
+                        "src": "832:20:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                        },
+                        "typeName": {
+                            "id": 53,
+                            "name": "uint8",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "832:5:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint8",
+                                "typeString": "uint8"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 69,
+                            "nodeType": "Block",
+                            "src": "919:91:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 63,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 61,
+                                            "name": "days_of_week",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 52,
+                                            "src": "929:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 62,
+                                            "name": "_days_of_the_week",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 56,
+                                            "src": "944:17:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "src": "929:32:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 64,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "929:32:0"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 67,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 65,
+                                            "name": "months_of_year",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 54,
+                                            "src": "971:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 66,
+                                            "name": "_months_of_year",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 58,
+                                            "src": "988:15:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "src": "971:32:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 68,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "971:32:0"
+                                }
+                            ]
+                        },
+                        "id": 70,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 59,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 56,
+                                    "mutability": "mutable",
+                                    "name": "_days_of_the_week",
+                                    "nameLocation": "877:17:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 70,
+                                    "src": "871:23:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 55,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "871:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 58,
+                                    "mutability": "mutable",
+                                    "name": "_months_of_year",
+                                    "nameLocation": "902:15:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 70,
+                                    "src": "896:21:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 57,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "896:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "870:48:0"
+                        },
+                        "returnParameters": {
+                            "id": 60,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "919:0:0"
+                        },
+                        "scope": 155,
+                        "src": "859:151:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 79,
+                            "nodeType": "Block",
+                            "src": "1067:39:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 77,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 75,
+                                            "name": "days_of_week",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 52,
+                                            "src": "1077:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 76,
+                                            "name": "newDays",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 72,
+                                            "src": "1092:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "src": "1077:22:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 78,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1077:22:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "3387553a",
+                        "id": 80,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "adjustNumberOfWeeks",
+                        "nameLocation": "1025:19:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 73,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 72,
+                                    "mutability": "mutable",
+                                    "name": "newDays",
+                                    "nameLocation": "1051:7:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 80,
+                                    "src": "1045:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 71,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1045:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1044:15:0"
+                        },
+                        "returnParameters": {
+                            "id": 74,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1067:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1016:90:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 89,
+                            "nodeType": "Block",
+                            "src": "1165:43:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 87,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 85,
+                                            "name": "months_of_year",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 54,
+                                            "src": "1175:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 86,
+                                            "name": "newMonths",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 82,
+                                            "src": "1192:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "src": "1175:26:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 88,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1175:26:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "aa1e9b68",
+                        "id": 90,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "adjusNumberOfMonths",
+                        "nameLocation": "1121:19:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 83,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 82,
+                                    "mutability": "mutable",
+                                    "name": "newMonths",
+                                    "nameLocation": "1147:9:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 90,
+                                    "src": "1141:15:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 81,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1141:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1140:17:0"
+                        },
+                        "returnParameters": {
+                            "id": 84,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1165:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1112:96:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 97,
+                            "nodeType": "Block",
+                            "src": "1262:36:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 95,
+                                        "name": "days_of_week",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 52,
+                                        "src": "1279:12:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "functionReturnParameters": 94,
+                                    "id": 96,
+                                    "nodeType": "Return",
+                                    "src": "1272:19:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "6c570bea",
+                        "id": 98,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "viewDays",
+                        "nameLocation": "1223:8:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 91,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1231:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 94,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 93,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 98,
+                                    "src": "1255:5:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 92,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1255:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1254:7:0"
+                        },
+                        "scope": 155,
+                        "src": "1214:84:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 105,
+                            "nodeType": "Block",
+                            "src": "1354:38:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 103,
+                                        "name": "months_of_year",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 54,
+                                        "src": "1371:14:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "functionReturnParameters": 102,
+                                    "id": 104,
+                                    "nodeType": "Return",
+                                    "src": "1364:21:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "f7e32c34",
+                        "id": 106,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "viewMonths",
+                        "nameLocation": "1313:10:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 99,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1323:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 102,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 101,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 106,
+                                    "src": "1347:5:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 100,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1347:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1346:7:0"
+                        },
+                        "scope": 155,
+                        "src": "1304:88:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 113,
+                            "nodeType": "Block",
+                            "src": "1435:34:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 111,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 109,
+                                            "name": "days_of_week",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 52,
+                                            "src": "1445:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "hexValue": "31",
+                                            "id": 110,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1461:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "1445:17:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 112,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1445:17:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "32874521",
+                        "id": 114,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "increaseDaysOfWeek",
+                        "nameLocation": "1407:18:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 107,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1425:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 108,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1435:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1398:71:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 121,
+                            "nodeType": "Block",
+                            "src": "1514:36:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 119,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 117,
+                                            "name": "months_of_year",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 54,
+                                            "src": "1524:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "hexValue": "31",
+                                            "id": 118,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1542:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "1524:19:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 120,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1524:19:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "9f0c3295",
+                        "id": 122,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "increaseMonthsOfYear",
+                        "nameLocation": "1484:20:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 115,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1504:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 116,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1514:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1475:75:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 129,
+                            "nodeType": "Block",
+                            "src": "1593:34:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 127,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 125,
+                                            "name": "days_of_week",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 52,
+                                            "src": "1603:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "-=",
+                                        "rightHandSide": {
+                                            "hexValue": "31",
+                                            "id": 126,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1619:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "1603:17:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 128,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1603:17:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "b7eb19ff",
+                        "id": 130,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "decreaseDaysOfWeek",
+                        "nameLocation": "1565:18:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 123,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1583:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 124,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1593:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1556:71:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 137,
+                            "nodeType": "Block",
+                            "src": "1671:36:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 135,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 133,
+                                            "name": "months_of_year",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 54,
+                                            "src": "1681:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "-=",
+                                        "rightHandSide": {
+                                            "hexValue": "31",
+                                            "id": 134,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1699:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "1681:19:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 136,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1681:19:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "e6e7a4b0",
+                        "id": 138,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "decreaseMonthOfYear",
+                        "nameLocation": "1642:19:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 131,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1661:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 132,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1671:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1633:74:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 145,
+                            "nodeType": "Block",
+                            "src": "1743:35:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 143,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 141,
+                                            "name": "months_of_year",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 54,
+                                            "src": "1753:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "hexValue": "30",
+                                            "id": 142,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1770:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_0_by_1",
+                                                "typeString": "int_const 0"
+                                            },
+                                            "value": "0"
+                                        },
+                                        "src": "1753:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 144,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1753:18:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "ca5c0471",
+                        "id": 146,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "clearMonths",
+                        "nameLocation": "1722:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 139,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1733:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 140,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1743:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1713:65:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 153,
+                            "nodeType": "Block",
+                            "src": "1812:33:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 151,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 149,
+                                            "name": "days_of_week",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 52,
+                                            "src": "1822:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "hexValue": "30",
+                                            "id": 150,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1837:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_0_by_1",
+                                                "typeString": "int_const 0"
+                                            },
+                                            "value": "0"
+                                        },
+                                        "src": "1822:16:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "id": 152,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1822:16:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "13aa95f8",
+                        "id": 154,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "clearDays",
+                        "nameLocation": "1793:9:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 147,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1802:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 148,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1812:0:0"
+                        },
+                        "scope": 155,
+                        "src": "1784:61:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 156,
+                "src": "785:1062:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "31:1817:0"
+    },
+    "functionHashes": {
+        "checkNFTCount()": "60c50851",
+        "decreaseNFT()": "c11aa379",
+        "increaseNFT()": "8f635bf1"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "68800",
+            "executionCost": "117",
+            "totalCost": "68917"
+        },
+        "external": {
+            "checkNFTCount()": "2246",
+            "decreaseNFT()": "26589",
+            "increaseNFT()": "24444"
+        }
+    }
+}
