@@ -1,6 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
-import "github.com/Arachnid/solidity-stringutils/strings.sol";
+
+
 
 contract MyFirstContract {
     // string public hey = "Hello Inspiration";
@@ -85,7 +86,7 @@ contract BusyDay {
         days_of_week = 0;
     }
 
-    function sayHello(string memory _name) public returns (string memory) {
-        return "Hello" + _name;
+    function sayHello(string memory _name) public pure  returns (string memory) {
+        return string.concat("Hello ", _name);
     }
 }
