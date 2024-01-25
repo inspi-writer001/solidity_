@@ -6,8 +6,62 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_days_",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_months_",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_what_day_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [],
-				"name": "a",
+				"name": "alterBoolState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBoolState",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getDay",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getWhatByte",
 				"outputs": [
 					{
 						"internalType": "bytes1",
@@ -20,12 +74,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "b",
+				"name": "getWhatDay",
 				"outputs": [
 					{
-						"internalType": "bytes1",
+						"internalType": "string",
 						"name": "",
-						"type": "bytes1"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -33,12 +87,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "heyAddress",
+				"name": "getWhatMonth",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -58,16 +112,55 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "minInt",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
+						"internalType": "uint8",
+						"name": "__days",
+						"type": "uint8"
 					}
 				],
-				"stateMutability": "view",
+				"name": "setDays",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "__months",
+						"type": "uint8"
+					}
+				],
+				"name": "setMonths",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "__today",
+						"type": "string"
+					}
+				],
+				"name": "setWhatDay",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "__thisMonth",
+						"type": "string"
+					}
+				],
+				"name": "setWhatMonth",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -99,11 +192,11 @@
 	},
 	"sources": {
 		"tutorial_2.sol": {
-			"keccak256": "0x9eb11b5cf457a438fdcf6db40792f2a6616f5c72dca2d5289a437a568d805324",
+			"keccak256": "0xca44ea98b765321d9e5e3515f3a272ebd8d004e19a07444ae79010afdb033b29",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa3f51e3f19198838dc33b739443f1db2c0cc8abfdc0f9bfb28eb736028509bd",
-				"dweb:/ipfs/QmUYQaFbLGB4mfkTPNyWSJmQAKCLw1WWVMYcqWZJoMEtFy"
+				"bzz-raw://5ac8ce5bb209a00b2ad3c8699dc4106a4644095a4adc3cb126f4c1c853e6e2a5",
+				"dweb:/ipfs/QmU3xjjDTu4wAYetrtSWCMtP9BNTaPjXA5YYdQ3C8sbvwC"
 			]
 		}
 	},

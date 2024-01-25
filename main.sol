@@ -89,4 +89,8 @@ contract BusyDay {
     function sayHello(string memory _name) public pure  returns (string memory) {
         return string.concat("Hello ", _name);
     }
+
+    function greet() public pure  returns(string memory) {
+        return "Hello";
+    }
 }

@@ -1,0 +1,193 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_initial_creator_name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_initial_creator_address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_initial_no_days",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_initial_no_weeks",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getNoDays",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNoWeeks",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_user_word",
+						"type": "string"
+					}
+				],
+				"name": "sayHello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_new_creator_address",
+						"type": "address"
+					}
+				],
+				"name": "updateCreatoAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_new_creator_name",
+						"type": "string"
+					}
+				],
+				"name": "updateCreatorName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_new_days",
+						"type": "uint256"
+					}
+				],
+				"name": "updateNoDays",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_new_weeks",
+						"type": "uint256"
+					}
+				],
+				"name": "updateNoWeeks",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"pamilern_test.sol": "AnotherTrest"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"pamilern_test.sol": {
+			"keccak256": "0x942144540806548a989f02497d964232b14f1ad0f79a52264c7e9e2d977950ac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d76d9e9b7a3ec297f12b5c4ea91dfd67049ce4e5e7b41298b218d7cf9b0a5886",
+				"dweb:/ipfs/QmYbMjWznK8QqUoEyvMzG1ZKYCe7y3C6UBy6ck54FKMTeu"
+			]
+		}
+	},
+	"version": 1
+}
